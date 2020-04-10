@@ -114,7 +114,7 @@ function validateProject (req, res, next) {
         res.status(400).json({ message: 'missing project data' });
       } else {
         if (!req.body.hasOwnProperty('description') || !req.body.hasOwnProperty('name')) {
-          res.status(400).json({ message: 'Please provide name and description for action'});
+          res.status(400).json({ message: 'Please provide name and description for project'});
         } else {
           next();
         }
